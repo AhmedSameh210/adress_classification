@@ -10,6 +10,7 @@ This project implements a deep learning model to classify whether a given input 
 - [Usage](#usage)
 - [Model Details](#model-details)
 - [Django App](#django-app)
+- [test App](#test-app)
 
 
 ## Installation
@@ -53,4 +54,8 @@ The deep learning model used for address classification is based on bidirectiona
 
 The Django web application provides a simple user interface for users to input an address. The input address is then sent to the deployed deep learning model, and the result is displayed on the web page indicating whether the address is in the Cairo government or not.
 
+## Testing using Test.py file 
+```bash
+   python test_script.py
+   ```
 
