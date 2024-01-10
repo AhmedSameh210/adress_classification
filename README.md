@@ -17,7 +17,7 @@ This project implements a deep learning model to classify whether a given input 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/address-classification.git
+   git clone https://github.com/AhmedSameh210/adress_classification.git
    cd address-classification
    ```
 
