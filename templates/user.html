@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+          padding: 0;
+          margin: 0;
+          border: none;
+          outline: none;
+          box-sizing: border-box;
+          font-family: 'Poppins' , sans-serif;
+        }
+
+        body{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          padding: 0px 10px;
+          background: #221f2f;
+          overflow: hidden;
+        }
+
+        body::before{
+          content: '';
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          background-color: #ed2ff0;
+          left: 15%;
+          top: 20%;
+          filter: blur(150px);
+        }
+
+        body::after{
+          content: '';
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          background-color: #22a8cd;
+          left: 80%;
+          top: 74%;
+          filter: blur(150px);
+        }
+
+        .holder{
+          width: 350px;
+          height: 250px;
+          padding: 30px;
+          background-color:rgba(0,0,0,0.44) ;
+          box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+          border-radius: 10px;
+          text-align: center;
+          color: #fff;
+          font-size: 23px;
+        }
+
+        .holder0{
+          width:100%;
+          margin: 0 auto;
+        }
+
+        .last_two_divs{
+          display: flex;
+          gap: 20px;
+          justify-content: space-evenly;
+          margin-top: 50px;
+        }
+
+        .holder p{
+          line-height: 1.6;
+        }
+
+        
+    </style>
+    <title>The Prediction Page</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="holder holder0">
+      <p>The result that the address you entered is <br> {{res}} <br> and with confidence threshold equal <br> {{cf}} </p>
+    </div>
+
+    <div class="last_two_divs">
+
+      <div class="holder holder1">
+        <p>the execution_time with two parallel threads is <br> {{T}}</p>
+      </div>
+  
+      <div class="holder holder2">
+  
+        <p>the execution_time with single thread (without parallel processing) is <br> {{t}}</p>
+      </div>
+    </div>
+  </div>
+   
+</body>
+</html>
