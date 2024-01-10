@@ -54,7 +54,9 @@ The deep learning model used for address classification is based on bidirectiona
 
 The Django web application provides a simple user interface for users to input an address. The input address is then sent to the deployed deep learning model, and the result is displayed on the web page indicating whether the address is in the Cairo government or not.
 it shows the prediction and the execution time of the app with and without using multithreading 
-
+ video link :
+ https://drive.google.com/file/d/1IkFStSXC0_l2VB-xc4gJNm9Cp57UMCds/view?usp=sharing
+ 
 ## Testing using Test.py file 
 ```bash
    python test_script.py
